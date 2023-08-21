@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all ease .5s;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 2px 20px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0px 1px 5px rgb(182, 182, 182);
+    z-index: 999;
+}
+
+.leftnav,
+.middlenav,
+.rightnav {
+    /* background-color: blue; */
+    padding: 2px;
+}
+
+.leftnav,
+.rightnav {
+    width: 200px;
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftnav img {
+    width: 100px;
+}
+
+.middlenav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.middlenav .search {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.search input {
+    width: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: gray;
+    flex: 1;
+    padding: 1px 1px 1px 20px;
+    font-weight: 600;
+
+
+}
+
+.search .i {
+    background-color: rgb(212, 212, 212);
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgb(163, 163, 163);
+}
+
+.middlenav .ii {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* main styles there */
+
+main {
+    /* background-color: red; */
+    height: 91vh;
+    display: flex;
+    gap: 20px;
+}
+
+main .sideNav,
+main .videoGrid {
+    /* background-color: blue; */
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+main .sideNav {
+    width: 250px;
+    white-space: nowrap;
+}
+
+.smallbar {
+    max-width: 60px;
+}
+
+.sideNav .sec-1 {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid grey;
+}
+
+.sec-1 h2 {
+    margin: 10px;
+}
+
+.sideNav .secItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px;
+    cursor: pointer;
+
+}
+
+.sideNav .secItem1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.secItem1 img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.secp {
+    display: block;
+}
+
+.pnone {
+    display: none;
+}
+
+.secnone {
+    display: none;
+}
+
+
+
+.sideNav .secItem:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+main .videoGrid {
+    flex: 1;
+}
+
+.videoGrid .categories {
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.categories div {
+    background-color: rgb(218, 218, 218);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.videoGrid .disGrids {
+    /* background-color: red; */
+    margin: 10px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.video .imgcon {
+    position: relative;
+    height: 160px;
+}
+
+.video .time {
+    position: absolute;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    right: 15px;
+    bottom: 15px;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.video .vid {
+    display: flex;
+    padding: 10px 0 0 0;
+    gap: 10px;
+
+}
+
+.video .vid img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.vid div h6 {
+    padding: 10px 0 5px 0;
+}
+
+
+@media screen and (max-width:1409px) {
+    .videoGrid .disGrids {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1183px) {
+    .videoGrid .disGrids {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video .imgcon {
+        height: 200px;
+    }
+
+}
+
+/* */
+@media screen and (max-width:973px) {
+    .videoGrid .disGrids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .video .imgcon {
+        height: 300px;
+    }
+
+}
+
+/* 811 */
+
+@media screen and (max-width:811px) {
+
+    .video .imgcon {
+        height: 200px;
+    }
+
+}
+
+/* /727 */
+
+@media screen and (max-width:727px) {
+    main .sideNav {
+        position: fixed;
+        bottom: 0;
+        top: 53px;
+        background-color: white;
+        z-index: 900;
+    }
+
+    .video .imgcon {
+        height: 300px;
+    }
+
+    .rightnav {
+        display: none;
+    }
+
+    .sideNav .secItem {
+        padding: 20px 0 20px 10px;
+        
+    }
+
+    main .videoGrid {
+        padding: 0 10px 0 65px;
+    }
+
+}
+
+/* 581 */
+
+@media screen and (max-width:581px) {
+    .video .imgcon {
+        height: 250px;
+    }
+
+}
+
+@media screen and (max-width:519px) {
+    .leftnav img {
+        width: 40px;
+    }
+
+    .video .imgcon {
+        height: 200px;
+    }
+
+    .leftnav {
+        width: 100px;
+    }
+}

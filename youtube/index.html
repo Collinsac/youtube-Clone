@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="./imgs/logos.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="leftnav">
+        <i class="fa fa-bars fa-lg" aria-hidden="true" id="btnmenu"></i>
+        <picture>
+          <source srcset="./imgs/logos.png" media="(max-width:519px)" />
+          <img src="./imgs/logo.png" alt="" />
+        </picture>
+      </div>
+      <div class="middlenav">
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <div class="i">
+            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="ii">
+          <i class="fa fa-microphone fa-lg" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="rightnav">
+        <i class="fa fa-video-camera fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+      </div>
+    </nav>
+
+    <main>
+      <article class="sideNav smallbar" id="sidebar">
+        <section class="sec-1">
+          <div class="secItem">
+            <i class="fa fa-home fa-lg"></i>
+            <p class="secp pnone">Home</p>
+          </div>
+          <div class="secItem">
+            <i class="fa fa-square fa-lg"></i>
+            <p class="secp pnone">Short</p>
+          </div>
+          <div class="secItem">
+            <i class="fa fa-newspaper fa-lg"></i>
+            <p class="secp pnone">Subscription</p>
+          </div>
+        </section>
+        <!-- ------------------------------------- -->
+        <section class="sec-1">
+          <div class="secItem">
+            <i class="fa fa-book fa-lg"></i>
+            <p class="secp pnone">library</p>
+          </div>
+          <div class="secItem">
+            <i class="fa fa-history fa-lg"></i>
+            <p class="secp pnone">History</p>
+          </div>
+          <div class="secItem">
+            <i class="fa fa-video fa-lg"></i>
+            <p class="secp pnone">Your videos</p>
+          </div>
+          <div class="secItem">
+            <i class="fa fa-refresh fa-lg"></i>
+            <p class="secp pnone">Watch later</p>
+          </div>
+          <div class="secItem">
+            <i class="fa fa-thumbs-up fa-lg"></i>
+            <p class="secp pnone">Liked videos</p>
+          </div>
+        </section>
+        <!-- ---------------------------------------- -->
+
+        <section class="sec-1 secnone" id="secno">
+          <h2>Subscription</h2>
+          <div class="secItem1">
+            <img src="./imgs/image.png" alt="" />
+            <p>Nuro web mastery</p>
+          </div>
+
+          <div class="secItem1">
+            <img src="./imgs/image.png" alt="" />
+            <p >Js mastery</p>
+          </div>
+
+          <div class="secItem1">
+            <img src="./imgs/image.png" alt="" />
+            <p >Simple super dev</p>
+          </div>
+          <div class="secItem1">
+            <img src="./imgs/image.png" alt="" />
+            <p >Nuro web mastery</p>
+          </div>
+        </section>
+      </article>
+      <article class="videoGrid">
+        <div class="categories">
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>Javascript</div>
+          <div>React js</div>
+          <div>Material UI</div>
+          <div>Jquery</div>
+          <div>Node js</div>
+          <div>Next js</div>
+          <div>Angular</div>
+          <div>Angular js</div>
+          <div>Vit js</div>
+          <div>Vue js</div>
+          <div>TypeScript</div>
+          <div>Bootstrap</div>
+          <div>Chackara UI</div>
+          <div>React native</div>
+          <div>axois</div>
+          <div>Redux</div>
+          <div>Socket IO</div>
+          <div>Express js</div>
+          <div>Mongo DB</div>
+        </div>
+
+        <div class="disGrids">
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/about-img.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>
+                  🔴 God Says: You Are So Blessed If You Found This Video‼️
+                </h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/background.png" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>God Says: His Love is the greatest</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/blog-item-1.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/cambg_1.jpg" alt="" />
+              <div>
+                <h5>Learn next js 13.4.1</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/cambg_1.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/cambg_2.jpg" alt="" />
+              <div>
+                <h5>God Says: You Are So Blessed If You Found This Video‼️</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/cambg_2.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/cambg_1.jpg" alt="" />
+              <div>
+                <h5>Ecommerce app with React js</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/cambg_3.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/cambg_4.jpg" alt="" />
+              <div>
+                <h5>God Says: You Are So Blessed If You Found This Video‼️</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/cambg_4.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>God Says: You Are So Blessed If You Found This Video‼️</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/home-slide-1.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>
+                  🔴 God Says: You Are So Blessed If You Found This Video‼️
+                </h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/home-slide-2.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>God Says: You Are So Blessed If You Found This Video‼️</h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/home-slide-3.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>
+                  🔴 God Says: You Are So Blessed If You Found This Video‼️
+                </h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/cambg_4.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>
+                  🔴 God Says: You Are So Blessed If You Found This Video‼️
+                </h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="imgcon">
+              <div class="time">12:30</div>
+              <img src="./imgs/home-slide-3.jpg" alt="" />
+            </div>
+
+            <div class="vid">
+              <img src="./imgs/image.png" alt="" />
+              <div>
+                <h5>
+                  🔴 God Says: You Are So Blessed If You Found This Video‼️
+                </h5>
+                <h6>God's meassage Today</h6>
+                <h5>188k views . 2weeks ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
